@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Source+Sans+Pro:600,700&display=swap');
+
+body {
+  margin: 0;
+}
+
+#root {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'PT Mono', monospace;
+  padding: 1rem;
+  height: 100vh;
+  max-width: 24rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border: 0.125rem solid black;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.button.invert {
+  color: #000;
+  background-color: #fff;
+}

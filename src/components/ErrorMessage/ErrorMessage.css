@@ -1,0 +1,16 @@
+.error-message {
+  border: 1px solid #ec315a;
+  background-color: #ec315a;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.error-message__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}

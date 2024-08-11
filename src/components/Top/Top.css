@@ -1,0 +1,13 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.top h1 {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1.5rem 0;
+}

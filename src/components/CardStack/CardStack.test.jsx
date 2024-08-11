@@ -16,7 +16,7 @@ describe('CardStack Component', () => {
   });
 
   test('Markerar ett kort som aktivt när man klickar på det', () => {
-    const setActiveCard = jest.fn();
+    const setActiveCard = vi.fn();
     render(<CardStack cards={cards} setActiveCard={setActiveCard} activeCard={null} />);
 
     const card = screen.getByText('1234 5678 1234 5678');

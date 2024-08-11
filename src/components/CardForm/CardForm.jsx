@@ -13,7 +13,7 @@ function CardForm(props) {
   const [vendor, setVendor] = useState();
   const [errorMessage, setErrorMessage] = useState('');
 
-  function onClick(event) {
+  async function onClick(event) {
     event.preventDefault();
 
     try {
@@ -41,6 +41,7 @@ function CardForm(props) {
       setShowAddCard((prevState) => {
         return !prevState;
       });
+
     } catch ({ message }) {
       setErrorMessage(message);
     }
@@ -87,6 +88,7 @@ function CardForm(props) {
 
   return (
     <form className='card-form'>
+      <p>hahahha</p>
       <label htmlFor='number' className='col-2'>
         Card Number
       </label>

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import Top from '../components/Top/Top';
 import Card from '../components/Card/Card';
 import CardStack from '../components/CardStack/CardStack';
@@ -33,6 +32,7 @@ function Home(props) {
       >
         Add a new card
       </button>
+      
     </main>
   );
 }

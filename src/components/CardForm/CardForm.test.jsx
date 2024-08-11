@@ -7,7 +7,7 @@ import CardForm from './CardForm';
 describe('CardForm Component', () => {
 
 
-  it('Visar felmeddelande om obligatoriska fält inte är ifyllda', async () => {
+  it(' Displays error message if all the fields are not filled ', async () => {
     const addCard = vi.fn(); 
     render(<CardForm addCard={addCard} setCard={() => {}} setShowAddCard={() => {}} />);
 
@@ -53,7 +53,7 @@ describe('CardForm Component', () => {
     expect(setShowAddCard).toHaveBeenCalled();
   });
 
-  it('Uppdaterar förhandsgranskningen när inputfälten ändras', () => {
+  it('Updates the preview when the input fields change', () => {
     render(<CardForm addCard={() => {}} setCard={() => {}} setShowAddCard={() => {}} />);
 
     fireEvent.change(screen.getByLabelText('Card Number'), { target: { value: '1234 5678 9012 3456' } });
